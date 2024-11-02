@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ddcece;
+}
+.hh {
+  text-align: center;
+  background-color: rgb(185, 164, 136);
+  padding: 50px 20px;
+  background-image: url(https://img.ev.mu/images/portfolio/pays/181/1605x1070/847131.jpg);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  transform: scaleX(0); /* ابدأ من عرض 0 */
+  transform-origin: center; /* اجعل البداية من المنتصف */
+  animation: typing 2s ease forwards, blink 0.5s step-end infinite alternate;
+}
+
+hr{
+  border-bottom:2px solid;;
+}
+
+@keyframes typing {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* تأثير وميض المؤشر */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.hh h1 {
+  font-size: 50px;
+  color: #333;
+}
+.hh p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #777;
+}
+.city-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+
+}
+.city-box {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  margin: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2.5px solid #ddcece;
+  animation: move 3s;
+}
+
+@keyframes move {
+  0% {
+    transform: translatey(100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+
+.city-box:hover{
+  transform: scale(1.1); /* تكبير العنصر بنسبة 10% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  border-color: #007A3D;
+  box-shadow: 0 0 10px #007A3D, 0 0 20px #007A3D;
+
+}
+
+
+.pp {
+  display: inline-block;
+}
+
+h3{
+  color: #C8102E;
+}
+
+h4{
+  color: #007A3D;
+}
+
+.city-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.city-box h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+.city-box p {
+  padding: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.next-btn {
+  display: inline-block;
+  background-color: #007A3D; /* لون الزر */
+  color: white; /* لون النص */
+  padding: 15px 30px; /* مساحة داخلية */
+  border: none; /* إزالة الحدود */
+  border-radius: 5px; /* زوايا دائرية */
+  font-size: 18px; /* حجم خط أكبر */
+  text-decoration: none; /* إزالة الخط السفلي */
+  transition: background-color 0.3s; /* تأثير الانتقال */
+}
+
+.next-btn:hover {
+  background-image: url(https://ih1.redbubble.net/image.1232678960.4208/flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
+  background-position: right 45%;
+  color: #C8102E;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  text-align: center;
+  height: 40px;
+  padding-top: 15px;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+nav{
+  display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.twitter-icon:hover {
+  color: #1DA1F2; 
+}
+a{
+  text-decoration: none;
+  color:#333 ;
+}
+
